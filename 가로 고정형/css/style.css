@@ -7,7 +7,7 @@ header {
   /* overflow: hidden; 높이를 "overflow: hidden"으로 찾아주면 안 된다. */
   height: 100px;
 }
-header div {
+header > div {
   border: 1px solid blue;
   height: 100px;
 }
@@ -28,7 +28,7 @@ header div {
   /* 자식 요소에 float 속성이 있을 때 부모요소는 높이를 잃어버린다. 그런데 header와는 다르게 overflow된 부분이 다른 영역에 보여지지 않아야하므로 "overflow: hidden"으로 높이를 찾아준다. */
   overflow: hidden;
 }
-.items div {
+.items > div {
   border: 1px solid pink;
   height: 200px;
   float: left;
@@ -52,13 +52,13 @@ footer > div {
   float: left;
   box-sizing: border-box;
 }
-.footer-logo {
-  width: 200px;
-}
 .copyright {
   width: 1000px;
 }
 .copyright div {
   border: 1px solid purple;
   height: 50px;
+}
+.family-site {
+  width: 200px;
 }
