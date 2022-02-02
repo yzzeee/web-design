@@ -102,19 +102,27 @@ footer {
   display: block;
   padding: 3px;
   border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+.tab1 a em {
+  width: 70%;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .tab1 a:last-child {
   border: none;
 }
 .tab1 a b {
-  float: right;
   font-weight: normal;
+  width: 20%;
+  float: right;
 }
 .tab2 {
   display: none;
   text-align: center;
 }
-
 .tab2 img {
   margin-top: 25px;
 }
