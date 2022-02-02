@@ -73,7 +73,8 @@ footer .copyright > div {
   list-style: none;
   width: 90%;
   margin: auto;
-  margin-top: 15px;  
+  margin-top: 15px;
+  position: relative;
 }
 .menu li {
   text-align: center;
@@ -90,14 +91,19 @@ footer .copyright > div {
 }
 .sub-menu {
   border: 1px solid #000;
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background-color: #000;
 }
 .sub-menu a {
   display: block;
   padding: 5px;
   transition: 0.5s;
+  color: #fff;
 }
 .sub-menu a:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
