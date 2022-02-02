@@ -207,7 +207,6 @@ footer {
   margin: auto;
 }
 .slide > div {
-  width: 3600px;
   font-size: 0;
   animation: slide 10s linear infinite;
   position: relative;
@@ -218,11 +217,11 @@ footer {
   height: 300px;
 }
 @keyframes slide {
-  0% { margin-left : 0; }
-  30% { margin-left : 0; }
-  35% { margin-left : -1200px; }
-  65% { margin-left : -1200px; }
-  70% { margin-left : -2400px; }
-  95% { margin-left : -2400px; }
-  100% { margin-left : 0; }
+  0% { margin-top : 0; }
+  30% { margin-top : 0; }
+  35% { margin-top : -300px; }
+  65% { margin-top : -300px; }
+  70% { margin-top : -600px; }
+  95% { margin-top : -600px; }
+  100% { margin-top : 0; }
 }
