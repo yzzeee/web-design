@@ -11,3 +11,12 @@ $('.btn a:last-child').on('click', function() {
   $(this).addClass('active');
   $(this).siblings().removeClass('active');
 });
+
+/* Modal */
+$('.open-modal').on('click', function() {
+  $('.modal').fadeIn();
+});
+
+$('.close-modal').on('click', function() {
+  $('.modal').fadeOut();
+});
