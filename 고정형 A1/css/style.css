@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+body {
+  margin: 0;
+  font-size: 15px;
+  background-color: #fff;
+  color: #222328;
+}
+
+a {
+  color: #222328;
+  text-decoration: none;
+}
+
+.container {}
+
+header {}
+header > div {}
+.header-logo {}
+.navi {}
+
+.slide {}
+.slide > div {}
+
+.items {}
+.items > div {}
+.news {}
+.banner {}
+.shortcut {}
+
+footer {}
+footer > div {}
+.footer-logo {}
+.copyright {}
+.sns {}
