@@ -36,7 +36,6 @@ header > div {
 
 .slide {}
 .slide > div {
-  border: 1px solid #ccc;
   height: 300px;
 }
 
@@ -83,4 +82,28 @@ footer > div {
 .sns {
   line-height: 130px;
   text-align: center;
+}
+
+/* Slide */
+.slide {
+  width: 1200px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.slide > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  animation: slide 10s linear infinite;
+}
+@keyframes slide {
+  0% { top: 0; }
+  30% { top: 0 }
+  35%  { top: -300px }
+  65% { top: -300px }
+  70%  { top: -600px }
+  95%  { top: -600px }
+  100%  { top: 0 }
 }
