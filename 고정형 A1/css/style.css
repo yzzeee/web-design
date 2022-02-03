@@ -44,10 +44,8 @@ header > div {
   overflow: hidden;
 }
 .items > div {
-  border: 1px solid #ccc;
   height: 200px;
   float: left;
-  box-sizing: border-box;
 }
 .news {
   width: 500px;
@@ -63,7 +61,6 @@ footer {
   overflow: hidden;
 }
 footer > div {
-  border: 1px solid #ccc;
   height: 100px;
   float: left;
   box-sizing: border-box;
@@ -76,4 +73,14 @@ footer > div {
 }
 .sns {
   width: 200px;
+}
+
+/* Image & Text */
+.copyright {
+  text-align: center;
+  padding-top: 40px;
+}
+.sns {
+  line-height: 130px;
+  text-align: center;
 }
