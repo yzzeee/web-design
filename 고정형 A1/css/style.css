@@ -13,16 +13,16 @@ a {
 }
 
 .container {
-  border: 1px solid #ccc;
   width: 1200px;
   margin: auto;
 }
 
 header {
   height: 100px;;
+  position: relative;
+  z-index: 10;
 }
 header > div {
-  border: 1px solid #ccc;
   height: 100px;
 }
 .header-logo {
@@ -106,4 +106,37 @@ footer > div {
   70%  { top: -600px }
   95%  { top: -600px }
   100%  { top: 0 }
+}
+
+/* Navigation */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.menu li > a {
+  border: 1px solid #ccc;
+  display: block;
+  padding: 5px;
+}
+.menu li:hover > a {
+  background-color: #000;
+  color: #fff
+}
+.sub-menu {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: none;
+}
+.sub-menu a {
+  display: block;
+  padding: 5px;
+}
+.sub-menu a:hover {
+  background-color: #000;
+  color: #fff
 }
