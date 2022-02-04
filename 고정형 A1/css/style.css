@@ -140,3 +140,55 @@ footer > div {
   background-color: #000;
   color: #fff
 }
+
+/* Tab Menu */
+.tab2 img {
+  width: 120px;
+  height: 120px;
+}
+.tab-inner {
+  width: 95%;
+  margin-top: 5px;
+}
+.btn {}
+.btn a {
+  border: 1px solid #000;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  margin-right: -6px;
+  border-bottom: none;
+  background-color: #fff;
+  margin-bottom: -1px;
+  background-color: #ddd;
+}
+.btn a.active {
+  background-color: #fff;
+}
+.tabs {}
+.tab1 {
+  border: 1px solid #000;
+  padding: 0 10px;
+}
+.tab1 a {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #000;
+}
+.tab1 a:last-child {
+  border-bottom: none;
+}
+.tab1 a b {
+  float: right;
+  font-weight: normal;
+}
+.tab2 {
+  display: none;
+  border: 1px solid #000;
+  height: 165px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
