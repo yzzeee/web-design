@@ -112,20 +112,28 @@ footer > div {
   float: left;
   width: 25%;
   text-align: center;
+  box-sizing: border-box;
 }
 .menu li > a {
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   display: block;
   padding: 5px;
+  transition: 0.2s;
 }
 .menu li:hover > a {
   background-color: #000;
   color: #fff
 }
+.menu li:first-child .sub-menu {
+  border-left: 1px solid #000;
+}
+.menu li:last-child .sub-menu {
+  border-right: 1px solid #000;
+}
 .sub-menu {
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #000;
   background-color: #fff;
-  display: none;
+  /* display: none; */
 }
 .sub-menu a {
   display: block;
