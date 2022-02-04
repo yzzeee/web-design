@@ -23,9 +23,9 @@ $('.close-modal').on('click', function() {
 
 /* Navigation */
 $('.menu li').mouseenter(function(){
-  $('.sub-menu, .sub-back').stop().slideDown();
+  $(this).children('.sub-menu').stop().slideDown();
 });
 
 $('.menu li').mouseleave(function(){
-  $('.sub-menu, .sub-back').stop().slideUp();
+  $(this).children('.sub-menu').stop().slideUp();
 });
