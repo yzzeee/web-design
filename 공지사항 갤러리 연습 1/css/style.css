@@ -24,13 +24,35 @@ header > div {
     float: right;
 }
 
-.content-inner {}
-.slide {}
-.items {}
-.items > div {}
-.news {}
-.banner {}
-.shortcut {}
+.content-inner {
+    background: #bbb;
+}
+.slide {
+    width: 1200px;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+}
+.items {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.items > div {
+    border: 1px solid black;
+    height: 200px;
+    float: left;
+    box-sizing: border-box;
+}
+.news {
+    width: 500px;
+}
+.banner {
+    width: 350px;
+}
+.shortcut {
+    width: 350px;
+}
 
 .footer-inner {}
 footer {}
