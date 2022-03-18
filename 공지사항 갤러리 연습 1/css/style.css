@@ -2,11 +2,27 @@
 
 .container {}
 
-.header-inner {}
-header {}
-header > div {}
-.header-logo {}
-.navi {}
+.header-inner {
+    background: #eee;
+}
+header {
+    height: 100px;
+    width: 1200px;
+    margin: auto;
+}
+header > div {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 100px;
+}
+.header-logo {
+    width: 200px;
+    float: left;
+}
+.navi {
+    width: 600px;
+    float: right;
+}
 
 .content-inner {}
 .slide {}
