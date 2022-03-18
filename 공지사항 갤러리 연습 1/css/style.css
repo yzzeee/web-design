@@ -54,9 +54,27 @@ header > div {
     width: 350px;
 }
 
-.footer-inner {}
-footer {}
-footer > div {}
-.footer-logo {}
-.copyright {}
-.copyright > div {}
+.footer-inner {
+    background: #ddd;
+}
+footer {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+footer > div {
+    border: 1px solid black;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+}
+.footer-logo {
+    width: 200px;
+}
+.copyright {
+    width: 1000px;
+}
+.copyright > div {
+    border: 1px solid black;
+    height: 50px;
+}
