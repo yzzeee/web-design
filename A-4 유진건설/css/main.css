@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* layout */
+.container {}
+
+.header-inner {
+    background-color: #eee;
+}
+header {
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+}
+header > div {
+    height: 100px;
+}
+.header-logo {
+    float: left;
+    width: 200px;
+}
+.nav {
+    width: 600px;
+    float: right;
+}
+
+.content-inner {}
+.content-inner > div {}
+.items {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.slide {
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+}
+.items > div {
+    height: 200px;
+    float: left;
+}
+.news {
+    width: 400px;
+}
+.gallery {
+    width: 400px;
+}
+.shortcut {
+    width: 400px;
+}
+
+.footer-inner {
+    background-color: #eee;
+}
+footer {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+footer > div {
+    height: 100px;
+    float: left;
+}
+.copyright {
+    width: 1000px;
+}
+.copyright > div {
+    height: 50px;
+}
+.family-site {
+    width: 200px;
+}
+
+/* slide */
+.slide {}
+.slide > div > a {
+    position: absolute;
+    animation: slide 10s linear infinite;
+    opacity: 0;
+    z-index: -2;
+}
+.slide > div > a:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide > div > a:nth-child(2) {
+    animation-delay: 3.5s;
+}
+.slide > div > a:nth-child(3) {
+    animation-delay: 7s;
+}
+@keyframes slide {
+    0% { opacity: 0; visibility: hidden; }
+    5% { opacity: 1; }
+    35% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* items */
+.tab-inner, .gallery-inner {
+    width: 95%;
+    margin-top: 5px;
+}
+.tab-inner .btn span, .gallery-inner .btn span {
+    display: inline-block;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: -1px;
+    background-color: white;
+}
+.tab-inner .tab, .gallery-inner .tab {
+    border: 1px solid #000;
+    padding: 0 10px;
+    height: 155px;
+    line-height: 1.8;
+}
+.tab-inner a {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.tab-inner a:hover {
+    color: dodgerblue;
+}
+.tab-inner .tab strong {
+    width: 70%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+.tab-inner .tab b {
+    font-weight: normal;
+    float: right;
+}
+.tab-inner .tab a:last-child {
+    border: none;
+}
+.gallery-inner .tab img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+}
+.gallery-inner .tab {
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* navi */
+header {
+    position: relative;
+}
+.menu {
+    list-style: none;
+    margin-top: 65px;::
+}
+.menu li {
+    text-align: center;
+    float: left;
+}
+.menu li > a {
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 5px;
+    width: 150px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.menu li:hover > a {
+    background-color: #000;
+    color: #fff;
+}
+.sub-menu {
+    background-color: #000;
+    color: #fff;
+    display: none;
+}
+.sub-menu a {
+    color: #fff;
+    display: block;
+    padding: 5px;
+    transition: 0.5s;
+}
+.sub-menu a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.sub-back {
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: -1;
+    display: none;
+}
+
+/* modal */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.modal-content {
+    background-color: #fff;
+    width: 600px;
+    line-height: 1.5;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.modal-content h2 {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.close-modal {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3px 7px;
+    float: right;
+}
+
+/* footer */
+.copyright {
+    text-align: center;
+}
+.copyright div:nth-child(1) {
+    padding-top: 10px;
+}
+
+.copyright div:nth-child(1) a:hover {
+    color: dodgerblue;
+}
+.family-site {
+    text-align: center;
+}
+.family-site select {
+    margin-top: 35px;
+    width: 180px;
+    padding: 5px;
+}
